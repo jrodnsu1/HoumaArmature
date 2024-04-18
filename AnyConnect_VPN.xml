@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+	<ClientInitialization>
+		<UseStartBeforeLogon UserControllable="false">false</UseStartBeforeLogon>
+		<AutomaticCertSelection UserControllable="false">true</AutomaticCertSelection>
+		<ShowPreConnectMessage>false</ShowPreConnectMessage>
+		<CertificateStore>All</CertificateStore>
+		<CertificateStoreMac>All</CertificateStoreMac>
+		<CertificateStoreOverride>false</CertificateStoreOverride>
+		<ProxySettings>IgnoreProxy</ProxySettings>
+		<AllowLocalProxyConnections>false</AllowLocalProxyConnections>
+		<AuthenticationTimeout>120</AuthenticationTimeout>
+		<AutoConnectOnStart UserControllable="false">false</AutoConnectOnStart>
+		<MinimizeOnConnect UserControllable="false">true</MinimizeOnConnect>
+		<LocalLanAccess UserControllable="true">false</LocalLanAccess>
+		<DisableCaptivePortalDetection UserControllable="false">false</DisableCaptivePortalDetection>
+		<ClearSmartcardPin UserControllable="false">true</ClearSmartcardPin>
+		<IPProtocolSupport>IPv4</IPProtocolSupport>
+		<AutoReconnect UserControllable="false">true
+			<AutoReconnectBehavior UserControllable="false">ReconnectAfterResume</AutoReconnectBehavior>
+		</AutoReconnect>
+		<SuspendOnConnectedStandby>false</SuspendOnConnectedStandby>
+		<AutoUpdate UserControllable="false">true</AutoUpdate>
+		<RSASecurIDIntegration UserControllable="false">Automatic</RSASecurIDIntegration>
+		<WindowsLogonEnforcement>SingleLocalLogon</WindowsLogonEnforcement>
+		<LinuxLogonEnforcement>SingleLocalLogon</LinuxLogonEnforcement>
+		<WindowsVPNEstablishment>AllowRemoteUsers</WindowsVPNEstablishment>
+		<LinuxVPNEstablishment>LocalUsersOnly</LinuxVPNEstablishment>
+		<AutomaticVPNPolicy>false</AutomaticVPNPolicy>
+		<PPPExclusion UserControllable="false">Automatic
+			<PPPExclusionServerIP UserControllable="false"></PPPExclusionServerIP>
+		</PPPExclusion>
+		<EnableScripting UserControllable="false">false</EnableScripting>
+		<EnableAutomaticServerSelection UserControllable="true">true
+			<AutoServerSelectionImprovement>20</AutoServerSelectionImprovement>
+			<AutoServerSelectionSuspendTime>4</AutoServerSelectionSuspendTime>
+		</EnableAutomaticServerSelection>
+		<RetainVpnOnLogoff>false
+		</RetainVpnOnLogoff>
+		<CaptivePortalRemediationBrowserFailover>false</CaptivePortalRemediationBrowserFailover>
+		<BlockUntrustedServers UserControllable="false">true</BlockUntrustedServers>
+		<AllowManualHostInput>true</AllowManualHostInput>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>AMER-ASH-GATEWAY</HostName>
+			<HostAddress>vpn.nidec-motor.com</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>AMER-DAL-GATEWAY</HostName>
+			<HostAddress>vpn1.nidec-motor.com</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>EMEA-LONDON-GATEWAY</HostName>
+			<HostAddress>vpn2.nidec-motor.com</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>EMEA-AMSTERDAM-GATEWAY</HostName>
+			<HostAddress>vpn3.nidec-motor.com</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>APAC-SINGAPORE-GATEWAY</HostName>
+			<HostAddress>ravpn.nidec-motor.com</HostAddress>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
